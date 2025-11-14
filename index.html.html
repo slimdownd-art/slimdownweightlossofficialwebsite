@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Slim Down — Weight Management Support</title>
+  <meta name="description" content="Slim Down — scientifically-formulated weight management supplement. Consult a healthcare professional before use." />
+  <meta name="theme-color" content="#2b9348" />
+  <style>
+    :root{
+      --bg:#ffffff; --muted:#6b7280; --accent:#2b9348; --dark:#0b1220;
+      --card:#f8faf9; --glass: rgba(255,255,255,0.6);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#fbfff9,#f3fff2);color:var(--dark);line-height:1.5}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;max-width:1200px;margin:0 auto}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#60c470);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(43,147,72,0.18)}
+    .logo svg{width:34px;height:34px;fill:white}
+    .brand h1{font-size:1.05rem;margin:0}
+    nav{display:flex;gap:14px;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+    main{max-width:1100px;margin:18px auto;padding:14px}
+    .hero{display:grid;grid-template-columns:1fr;gap:18px;align-items:center;padding:28px;border-radius:14px;background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.8));box-shadow:0 8px 30px rgba(14,20,12,0.06)}
+    .hero-inner{padding:8px 6px}
+    .kicker{display:inline-block;padding:6px 10px;border-radius:999px;background:#ecfdf3;color:#065f46;font-weight:700;font-size:0.85rem;margin-bottom:12px}
+    .headline{font-size:1.8rem;margin:6px 0 12px}
+    .sub{color:var(--muted);margin-bottom:16px}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 16px rgba(11,18,32,0.04)}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+    .feature{padding:12px;border-radius:10px;background:white}
+    .product-visual{display:flex;align-items:center;justify-content:center;padding:24px}
+    .pill{
+      width:180px;height:180px;border-radius:100%;background:linear-gradient(135deg,#ffffff,#e6fff0);display:flex;align-items:center;justify-content:center;
+      box-shadow: 0 10px 30px rgba(43,147,72,0.12), inset 0 -8px 18px rgba(0,0,0,0.02);
+    }
+    .pill svg{width:92px;height:92px;opacity:0.95}
+    .section{margin-top:28px}
+    h2{margin:6px 0 12px;font-size:1.2rem}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .list{display:flex;flex-direction:column;gap:10px}
+    .testimonial{background:white;padding:12px;border-radius:10px}
+    footer{padding:20px 12px;margin-top:28px;border-top:1px solid #eef6ee;color:var(--muted)}
+    form{display:grid;gap:10px}
+    input,textarea,button,select{font:inherit;padding:10px;border-radius:8px;border:1px solid #e6efe6}
+    button{background:var(--accent);color:white;border:0;padding:10px 12px;font-weight:700;cursor:pointer}
+    .muted{color:var(--muted);font-size:0.95rem}
+    .pill-ico{width:26px;height:26px;display:inline-block;vertical-align:middle;margin-right:8px}
+    .faq{display:flex;flex-direction:column;gap:8px}
+    .faq-item{background:white;padding:12px;border-radius:10px}
+    .small{font-size:0.85rem}
+    @media(min-width:900px){
+      .hero{grid-template-columns:1fr 420px}
+      .features{grid-template-columns:repeat(3,1fr)}
+      .grid-2{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:899px){
+      .features{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:640px){
+      header{padding:12px}
+      .headline{font-size:1.4rem}
+      .features{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+    }
+    .product-visual img{
+     width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo" aria-hidden="true">
+        <!-- simple pill logo -->
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M4 12a8 8 0 1 0 16 0 8 8 0 0 0-16 0zm2 0a6 6 0 0 1 12 0v0a6 6 0 0 1-12 0z"></path>
+        </svg>
+      </div>
+      <div>
+        <h1>Slim Down</h1>
+        <div class="muted small">Supports healthy weight management</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#how">कैसे काम करता है</a>
+      <a href="#ingredients">Ingredients</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn" href="#contact">Order / संपर्क करें</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="kicker">Naya Product • clinically inspired*</div>
+        <h2 id="hero-title" class="headline">Slim Down — आपकी weight management में मदद</h2>
+        <p class="sub">एक thoughtfully formulated supplement designed to support healthy metabolism and appetite control.</p>
+        <div class="cta-row">
+          <a class="btn" href="#contact">Order Now — ऑर्डर करें</a>
+          <a style="padding:10px 14px;border-radius:10px;text-decoration:none;color:var(--accent);border:1px solid rgba(43,147,72,0.16;font-weight:700)" href="#how">Learn More</a>
+        </div>
+
+        <div class="section">
+          <div class="card">
+            <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+              <div style="flex:1">
+                <strong>Key benefits</strong>
+                <div class="muted small">(Claims are generalized; individual results vary)</div>
+                <ul class="muted">
+                  <li>Metabolism support</li>
+                  <li>Appetite management</li>
+                  <li>Made with natural-origin ingredients</li>
+                </ul>
+              </div>
+              <div style="min-width:220px">
+                <strong>Price</strong>
+                <div style="font-size:1.05rem;font-weight:800">₹1000 / 2 bottle</div>
+                <div class="muted small">Free shipping</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="features" style="margin-top:12px">
+            <div class="feature">
+              <strong>Natural ingredients</strong>
+              <div class="muted small">Plant-derived extracts & standardised compounds.</div>
+            </div>
+            <div class="feature">
+              <strong>Quality checked</strong>
+              <div class="muted small">Manufactured in certified facilities.</div>
+            </div>
+            <div class="feature">
+              <strong>Easy to use</strong>
+              <div class="muted small">One capsule daily with water, as recommended.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-visual" aria-hidden="true">
+        <div class="product-visual">
+     <img src="slim1.jpg"">
+    </div>
+    </div>
+    </div>
+    </section>
+
+    <section id="how" class="section" aria-labelledby="how-title">
+      <h2 id="how-title">कैसे काम करता है / How it works</h2>
+      <div class="grid-2">
+        <div>
+          <p class="muted">Slim Down is designed to support aspects of healthy weight management through mechanisms such as mild metabolic support and appetite modulation. यह दवा नहीं है; यह एक supplement है. Personal results vary; consult a healthcare professional before use, especially if you are pregnant, nursing, under medication, or have a medical condition.</p>
+
+          <ul class="list">
+            <li><strong>Step 1:</strong> Start with two capsule daily (or as advised).</li>
+            <li><strong>Step 2:</strong> Combine with balanced diet and activity.</li>
+            <li><strong>Step 3:</strong> Monitor progress and consult your practitioner periodically.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="margin:0 0 8px">Suggested routine</h3>
+          <div class="card">
+            <div class="muted small">Morning/Evening </div>
+            <p style="margin:6px 0 12px">One tablet daily after breakfast and one tablet daily after dinner with normal water.</p>
+            <div class="muted small">Lifestyle tips</div>
+            <ul class="muted">
+              <li>Hydration, 7–8 hours sleep, balanced meals</li>
+              <li>No exercise required.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ingredients" class="section" aria-labelledby="ing-title">
+      <h2 id="ing-title">Ingredients / प्रमुख अवयव</h2>
+      <div class="card">
+        <p class="muted">Each capsule contains standardized extracts and supportive nutrients. (This is a template: replace with actual, verified ingredient list and amounts.)</p>
+        <ul class="muted">
+          <li>Green tea extract — standardized polyphenols</li>
+          <li>Garcinia cambogia extract — hydroxycitric acid (HCA)</li>
+          <li>Fiber blend & vitamins (B-complex)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section">
+      <h2>Testimonials — ग्राहक अनुभव</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px">
+        <div class="testimonial">
+          <strong>Anjali R.</strong>
+          <div class="muted small">"Slim Down ne meri diet ke saath achha support diya. Consulted mera doctor pehle."</div>
+        </div>
+        <div class="testimonial">
+          <strong>Rohit S.</strong>
+          <div class="muted small">"Simple to use. Results vary — but overall positive lifestyle changes."</div>
+        </div>
+        <div class="testimonial">
+          <strong>Priya M.</strong>
+          <div class="muted small">"Packaging and delivery fast. Customer support responsive."</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <h2>FAQ</h2>
+      <div class="faq">
+        <div class="faq-item">
+          <strong>Q: Kya yeh medicine hai?</strong>
+          <p class="muted">A: Yeh marketed as a supplement to support weight management, not as a prescription drug. Always consult your healthcare provider before starting any supplement.</p>
+        </div>
+        <div class="faq-item">
+          <strong>Q: Side effects?</strong>
+          <p class="muted">A: It is an Ayurvedic Product, So no side effects to your body.</p>
+        </div>
+        <div class="faq-item">
+          <strong>Q: Kisi bhi age group ke liye?</strong>
+          <p class="muted">A: Not recommended for children unless prescribed by a physician. Consult before use if you are pregnant or nursing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Order / संपर्क करें</h2>
+      <div class="grid-2">
+        <div>
+          <form id="orderForm" onsubmit="return handleSubmit(event)" novalidate>
+            <label for="name">Full name / नाम</label>
+            <input id="name" name="name" required placeholder="Your name / आपका नाम" />
+
+            <label for="phone">Phone / मोबाइल</label>
+            <input id="phone" name="phone" required placeholder="+91 98xxxxxxxx" pattern="[0-9+\s-]{7,20}" />
+
+            <label for="email">Email (optional)</label>
+            <input id="email" name="email" type="email" placeholder="name@example.com" />
+
+            <label for="qty">Quantity / मात्रा</label>
+            <select id="qty" name="qty">
+              <option value="2">2 bottles </option>
+              <option value="3">3 bottles (1400)</option>
+            </select>
+
+            <label for="note">Notes / संदेश (optional)</label>
+            <textarea id="note" name="note" rows="3" placeholder="Address / delivery notes"></textarea>
+
+            <button type="submit">Place Order — ऑर्डर करें</button>
+            <div id="formMessage" class="muted small" style="margin-top:8px"></div>
+          </form>
+        </div>
+
+        <div>
+          <div class="card">
+            <strong>Customer Care</strong>
+            <p class="muted">Phone: +91 8920650871<br>Email: slimdownd@gmail.com</p>
+            <hr />
+            <strong>Shipping</strong>
+            <p class="muted small">Delivery across India. Typical dispatch within 3-4 days after order confirmation.</p>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div style="max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+        <div>
+          <strong>Slim Down</strong>
+          <div class="muted small">© <span id="year"></span> Slim Down Pvt<p class="muted small">30-day return policy on u Ltd</div>
+        </div>
+        <div class="muted small" style="max-width:650px">
+          <strong>IMPORTANT DISCLAIMER:</strong> This website provides information about a dietary supplement intended to support weight management. Individual results may vary. Product information on this page is illustrative — replace with verified ingredient lists, tested claims, and regulatory approvals before publishing. Consult a healthcare professional before starting any new supplement, especially if you are pregnant, nursing, taking medications, or have a medical condition.
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const qty = document.getElementById('qty').value;
+      const msg = document.getElementById('formMessage');
+
+      if(!name || !phone){
+        msg.textContent = 'कृपया नाम और मोबाइल नंबर भरें / Please enter name and phone.';
+        return false;
+      }
+
+      // simple validation for phone number digits
+      const phoneDigits = phone.replace(/[^0-9]/g,'');
+      if(phoneDigits.length < 7){
+        msg.textContent = 'कृपया मान्य फोन नंबर दें / Please enter a valid phone.';
+        return false;
+      }
+
+      // For demo: show confirmation (replace with real submission)
+      msg.style.color = 'green';
+      msg.textContent = 'धन्यवाद! आपका ऑर्डर रिक्वेस्ट मिला है. We will contact you shortly.';
+      // reset form after short delay
+      setTimeout(()=>{ document.getElementById('orderForm').reset(); msg.style.color=''; }, 2500);
+      return false;
+    }
+
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (e)=>{
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
+      });
+    });
+  </script>
+</body>
+</html>
